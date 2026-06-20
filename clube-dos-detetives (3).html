@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Arquivo Confidencial — +300 Casos Criminais</title>
+<meta name="description" content="Mais de 300 mistérios para resolver com seu parceiro, família ou amigos. Dossiês, laudos forenses, depoimentos e pistas reais. Acesso imediato e vitalício.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#050505;color:#fff;font-family:'Inter',sans-serif;}
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:9998;
+    background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,0.55) 100%);
+  }
+  body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:9997;
+    background:repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 3px);
+    opacity:0.5;
+  }
+  .grain-overlay{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:9996;
+    opacity:0.045;
+    mix-blend-mode:overlay;
+    background:#888;
+    filter:url(#grainFilter);
+  }
+</style>
+<svg style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+  <filter id="grainFilter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"></feTurbulence>
+    <feColorMatrix type="saturate" values="0"></feColorMatrix>
+  </filter>
+</svg>
+<div class="grain-overlay"></div>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2189839065194378');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2189839065194378&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- 🔥 HEADER -->
+<header class="header-fixo">
+  <div class="container-header">
+    <div class="logo">🗂️ ARQUIVO <span class="logo-flicker">CONFIDENCIAL</span></div>
+    <nav class="menu">
+      <a href="#arquivos">Investigação</a>
+      <a href="#dossies">Arquivos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">Interrogatório</a>
+    </nav>
+    <a href="#oferta" class="btn-header">👉 LIBERAR ACESSO</a>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </div>
+  <div class="menu-mobile" id="menuMobile">
+    <a href="#arquivos">Investigação</a>
+    <a href="#dossies">Arquivos</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#faq">Interrogatório</a>
+    <a href="#oferta" class="btn-mobile">👉 LIBERAR ACESSO</a>
+  </div>
+</header>
+
+<style>
+.header-fixo{ position:fixed; top:0; left:0; width:100%; z-index:9999; background:rgba(0,0,0,0.95); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,0,0,0.15); transition:0.3s; }
+.container-header{ max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:14px 20px; }
+.logo{ font-weight:900; color:#fff; font-size:15px; letter-spacing:1px; }
+.menu{ display:flex; gap:28px; }
+.menu a{ color:#aaa; text-decoration:none; font-size:14px; transition:0.2s; }
+.menu a:hover{ color:#fff; }
+.btn-header{ background:linear-gradient(45deg,#ff1e1e,#7a0000); color:#fff; padding:10px 16px; border-radius:6px; font-size:13px; text-decoration:none; font-weight:800; box-shadow:0 0 15px rgba(255,0,0,0.5); transition:0.2s; }
+.btn-header:hover{ transform:scale(1.05); }
+.menu-toggle{ display:none; font-size:24px; color:#fff; cursor:pointer; }
+.menu-mobile{ display:none; flex-direction:column; background:#0a0a0a; border-top:1px solid rgba(255,0,0,0.2); }
+.menu-mobile a{ padding:15px; color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.05); }
+.btn-mobile{ background:#ff1e1e; text-align:center; font-weight:800; }
+.logo-flicker{ color:#ff3b3b; animation:logoFlicker 6s infinite; }
+@keyframes logoFlicker{
+  0%, 88%, 92%, 100%{ opacity:1; text-shadow:0 0 8px rgba(255,0,0,0.5); }
+  89%{ opacity:0.3; text-shadow:none; }
+  90%{ opacity:1; }
+  91%{ opacity:0.5; }
+}
+@media(max-width:768px){ .menu{ display:none; } .btn-header{ display:none; } .menu-toggle{ display:block; } }
+body{ padding-top:80px; }
+</style>
+<script>
+const toggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('menuMobile');
+toggle.addEventListener('click', () => {
+  mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+});
+document.querySelectorAll('.menu a, .menu-mobile a, .btn-header, .btn-mobile').forEach(link => {
+  link.addEventListener('click', function(e){
+    const href = this.getAttribute('href');
+    if(!href.startsWith('#')) return;
+    e.preventDefault();
+    const targetID = href.replace('#','');
+    const target = document.getElementById(targetID);
+    if(target){
+      mobileMenu.style.display = 'none';
+      const headerOffset = 85;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+    }
+  });
+});
+</script>
+
+<!-- HERO HEADLINE -->
+<section style="background:#0b0b0b;color:#fff;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-align:center;">
+  <div style="background:#8B0000;padding:14px 10px;font-weight:700;font-size:16px;letter-spacing:0.3px;">
+    Cada caso testa sua mente até o limite!
+  </div>
+  <div style="max-width:680px;margin:0 auto;padding:35px 20px;">
+    <h1 style="font-size:25px;line-height:1.4;margin-bottom:18px;font-weight:700;color:#ffffff;">
+      +300 Mistérios Para Resolver Juntos:
+      <span style="color:#FFD700;">Uma Experiência de Detetive</span>
+      Para Casais, Famílias e Amigos!
+    </h1>
+    <p style="font-size:16px;color:#dcdcdc;line-height:1.7;margin-bottom:25px;">
+      Cada pista é uma <strong style="color:#fff;">armadilha</strong>.<br>
+      Cada escolha, um <strong style="color:#FFD700;">teste</strong>.<br><br>
+      No jogo, só quem pensa como um verdadeiro detetive
+      consegue encontrar a <strong style="color:#fff;">verdade</strong> antes que ela desapareça.
+    </p>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div style="text-align:center;background:#0b0b0b;">
+  <img decoding="async" width="768" height="768" style="max-width:100%;height:auto;display:inline-block;"
+    src="https://clubedosdetetives.site/wp-content/uploads/2025/10/ChatGPT-Image-28-de-abr.-de-2025-12_16_41-768x768.png"
+    srcset="https://clubedosdetetives.site/wp-content/uploads/2025/10/ChatGPT-Image-28-de-abr.-de-2025-12_16_41-768x768.png 768w, https://clubedosdetetives.site/wp-content/uploads/2025/10/ChatGPT-Image-28-de-abr.-de-2025-12_16_41-300x300.png 300w, https://clubedosdetetives.site/wp-content/uploads/2025/10/ChatGPT-Image-28-de-abr.-de-2025-12_16_41-150x150.png 150w, https://clubedosdetetives.site/wp-content/uploads/2025/10/ChatGPT-Image-28-de-abr.-de-2025-12_16_41.png 1024w"
+    sizes="(max-width: 768px) 100vw, 768px" alt="">
+</div>
+
+<!-- QUANDO NADA É O QUE PARECE -->
+<section style="background:#0b0b0b;color:#fff;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-align:center;">
+  <div style="max-width:680px;margin:0 auto;padding:35px 20px;">
+    <h2 style="font-size:20px;margin:0 0 15px;color:#FFD700;">
+      Quando Nada É o Que Parece, Você Conseguiria Encontrar a Verdade?
+    </h2>
+    <p style="font-size:16px;color:#cfcfcf;line-height:1.7;">
+      Em um universo onde cada evidência pode ser manipulada e cada conclusão pode ser <strong style="color:#fff;">fatal</strong>, apenas os mais atentos sobrevivem.<br><br>
+      Cada caso traz novos enigmas, novas armadilhas, novas verdades ocultas esperando para serem desenterradas.<br><br>
+      Se você acha que pode confiar nos seus olhos, <strong style="color:#FFD700;">pense novamente</strong>.<br><br>
+      A única certeza é que <strong style="color:#fff;">nem tudo é o que parece</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- O QUE VOCÊ VAI RECEBER -->
+<section class="case-benefits" id="arquivos">
+  <div class="overlay"></div>
+  <div class="container">
+    <h2>O QUE VOCÊ VAI RECEBER AO ENTRAR NO <span>CASO</span></h2>
+    <div class="box">
+      <p class="description">
+        Assim que sua compra for confirmada, você recebe acesso imediato a um
+        dossiê criminal completo em PDF. São documentos confidenciais que vão
+        te transformar em um verdadeiro detetive.
+      </p>
+      <ul>
+        <li>Relatórios policiais e transcrições de chamadas de emergência</li>
+        <li>Laudos forenses e autópsias detalhadas (+18)</li>
+        <li>Entrevistas com suspeitos e testemunhas exclusivas</li>
+        <li>Pistas físicas, digitais e mapas da cena do crime</li>
+        <li>Links secretos para páginas online com mais evidências</li>
+        <li>Produto 100% digital — jogue pelo celular ou computador</li>
+      </ul>
+      <div class="quote">
+        "Trabalhem em dupla ou em grupo. Conectem as pistas, analisem os
+        documentos e descubram a verdade escondida no caso."
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.case-benefits{ position:relative; padding:90px 20px; background:radial-gradient(circle at top, rgba(120,0,0,0.15), transparent 40%), #050505; overflow:hidden; }
+.case-benefits::before{ content:""; position:absolute; inset:0; background:url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); opacity:0.25; }
+.case-benefits .container{ position:relative; z-index:2; max-width:1100px; margin:auto; }
+.case-benefits h2{ font-family:'Cinzel', serif; text-align:center; color:#fff; font-size:46px; line-height:1.2; margin-bottom:50px; text-transform:uppercase; letter-spacing:1px; }
+.case-benefits h2 span{ color:#b30000; display:block; }
+.case-benefits .box{ background:rgba(0,0,0,0.82); border:1px solid rgba(255,255,255,0.08); padding:45px; max-width:760px; margin:auto; box-shadow:0 0 40px rgba(0,0,0,0.7), 0 0 15px rgba(179,0,0,0.15); backdrop-filter:blur(3px); }
+.case-benefits .description{ color:#d9d9d9; font-family:'Inter', sans-serif; font-size:18px; line-height:1.7; text-align:center; margin-bottom:35px; }
+.case-benefits ul{ list-style:none; padding:0; margin:0; }
+.case-benefits ul li{ position:relative; padding-left:42px; margin-bottom:24px; color:#fff; font-family:'Inter', sans-serif; font-size:18px; line-height:1.5; }
+.case-benefits ul li::before{ content:"✔"; position:absolute; left:0; top:0; width:26px; height:26px; border-radius:50%; background:#071b10; color:#00d26a; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:bold; box-shadow:0 0 10px rgba(0,210,106,0.2); }
+.case-benefits .quote{ margin-top:40px; padding-top:30px; border-top:1px solid rgba(255,255,255,0.08); text-align:center; color:#9f9f9f; font-style:italic; font-family:'Inter', sans-serif; line-height:1.6; font-size:15px; }
+@media(max-width:768px){ .case-benefits{ padding:70px 18px; } .case-benefits h2{ font-size:30px; } .case-benefits .box{ padding:28px; } .case-benefits .description{ font-size:16px; } .case-benefits ul li{ font-size:16px; padding-left:38px; } }
+</style>
+
+<!-- CTA -->
+<a href="#oferta" class="cta-invest">🕵️‍♂️ DESCUBRA O MISTÉRIO</a>
+
+<style>
+.cta-invest{ display:block; width:fit-content; margin:30px auto; padding:18px 30px; background:linear-gradient(135deg,#ff0000,#7a0000); color:#fff; font-family:'Inter', sans-serif; font-size:15px; font-weight:900; letter-spacing:1px; text-decoration:none; border-radius:14px; box-shadow:0 10px 40px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4); transition:all 0.25s ease; animation:pulseBtn 2s infinite; }
+.cta-invest:hover{ transform:scale(1.05); box-shadow:0 15px 60px rgba(255,0,0,1), 0 0 30px rgba(255,0,0,0.8); }
+@keyframes pulseBtn{ 0%,100%{ box-shadow:0 10px 40px rgba(255,0,0,0.6), 0 0 20px rgba(255,0,0,0.4); } 50%{ box-shadow:0 15px 50px rgba(255,0,0,0.9), 0 0 35px rgba(255,0,0,0.7); } }
+@media(max-width:768px){ .cta-invest{ width:90%; text-align:center; font-size:14px; } }
+</style>
+
+<!-- DOSSIÊS -->
+<section class="cd2-section" id="dossies">
+  <p class="cd2-mini">ARQUIVOS DESCLASSIFICADOS</p>
+  <h2 class="cd2-titulo">QUEM SERÁ SUA <span class="cd2-vitima">PRÓXIMA VÍTIMA</span>?</h2>
+  <p class="cd2-subtitulo">Passe o mouse sobre um dossiê para acessar o caso</p>
+  <div class="cd2-controls">
+    <button onclick="cd2Mover(-1)">&#8249;</button>
+    <button onclick="cd2Mover(1)">&#8250;</button>
+  </div>
+  <div class="cd2-wrapper">
+    <div class="cd2-track" id="cd2Track">
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="Cruzeiro Suicida" data-nivel="medio"
+        data-descricao="O Sovereign Princess partiu para uma viagem de luxo com mais de 300 passageiros. Três dias depois, foi encontrado à deriva no oceano. Sem sobreviventes. Sem sinais de luta. Sem explicações. Agora você tem acesso aos arquivos confidenciais — descubra o que realmente aconteceu a bordo antes que a verdade afunde para sempre."
+        data-alerta="300 pessoas. Zero sobreviventes. E ninguém viu nada.">
+        <div class="cd2-badge medio">⚠ Médio</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/05/eab40da7-ebab-40b3-92f0-495ef65bb318.png" alt="Cruzeiro Suicida">
+        <div class="cd2-label">Cruzeiro Suicida</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">Cruzeiro Suicida</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="Morte do Pastor" data-nivel="dificil"
+        data-descricao="O pastor mais influente da cidade foi encontrado morto dentro da própria igreja. Sem sinais de arrombamento. Sem testemunhas. Apenas uma frase escrita no altar: 'Atrás da cruz se esconde o diabo.' Alguém que ele confiava sabia demais — e decidiu que ele não podia continuar falando."
+        data-alerta="A confissão mais perigosa não foi dita no sermão.">
+        <div class="cd2-badge dificil">⚠ Difícil</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/05/4660050c-78a6-4e36-8802-1a88560d2f28.png" alt="Morte do Pastor">
+        <div class="cd2-label">Morte do Pastor</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">Morte do Pastor</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="Mistério no Convento" data-nivel="medio"
+        data-descricao="Por décadas, o Convento Santa Maria da Paz guardou um silêncio absoluto. Nenhuma freira falava sobre o que acontecia depois da meia-noite. Tudo mudou quando uma jovem noviça desapareceu sem deixar rastros. Dias depois, páginas queimadas de um antigo diário começaram a surgir pelos corredores — revelando rituais proibidos e um segredo enterrado atrás das paredes sagradas."
+        data-alerta="O silêncio delas não era devoção. Era medo.">
+        <div class="cd2-badge medio">⚠ Médio</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/05/ae6022ab-451f-44b7-b49f-ca20dfd9714e-1.png" alt="Mistério no Convento">
+        <div class="cd2-label">Mistério no Convento</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">Mistério no Convento</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="O Diário Proibido de Ravenwood" data-nivel="dificil"
+        data-descricao="Um diário antigo foi encontrado trancado — mas não deveria existir. Páginas foram alteradas, trechos desapareceram… e todos que tentaram entender seu conteúdo simplesmente sumiram."
+        data-alerta="O problema não é o que está escrito. É o que foi apagado.">
+        <div class="cd2-badge dificil">⚠ Difícil</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/c042e653-da19-48dd-9487-d97f49209f87.png" alt="Dossiê Ravenwood">
+        <div class="cd2-label">O Diário Proibido de Ravenwood</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">O Diário Proibido de Ravenwood</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="O Desaparecimento das Irmãs Holloway" data-nivel="medio"
+        data-descricao="Duas irmãs desapareceram dentro da própria casa. Nenhum sinal de invasão. Apenas detalhes fora do lugar — e uma história perfeita demais para ser verdade."
+        data-alerta="Quando tudo parece normal demais, algo está errado.">
+        <div class="cd2-badge medio">⚠ Médio</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/0623508d-a2a9-4227-95e6-8ceab217e52c.png" alt="Dossiê Holloway">
+        <div class="cd2-label">O Desaparecimento das Irmãs Holloway</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">O Desaparecimento das Irmãs Holloway</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="A Fita Perdida do Massacre de 1998" data-nivel="extremo"
+        data-descricao="Uma fita misteriosa reaparece décadas depois e contradiz toda a versão oficial do caso. Se for verdadeira, alguém mentiu por anos — e sabe que você está procurando."
+        data-alerta="Algumas verdades foram enterradas de propósito.">
+        <div class="cd2-badge extremo">⚠ Extremo</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/ae982eda-b3fc-4dcb-abd8-7fbb7d2bfa1d.png" alt="Dossiê Massacre 1998">
+        <div class="cd2-label">A Fita Perdida do Massacre de 1998</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">A Fita Perdida do Massacre de 1998</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="O Segredo Enterrado de Black Hollow" data-nivel="dificil"
+        data-descricao="Uma escavação de rotina revela algo que nunca deveria ser encontrado. Os moradores do vilarejo sabem mais do que dizem — e o silêncio deles tem um preço."
+        data-alerta="Nada faz sentido. Até que faz.">
+        <div class="cd2-badge dificil">⚠ Difícil</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/3c694253-0b43-4552-ae2d-01dab90e0592.png" alt="Dossiê Black Hollow">
+        <div class="cd2-label">O Segredo Enterrado de Black Hollow</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">O Segredo Enterrado de Black Hollow</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="O Mistério da Cabana 13" data-nivel="medio"
+        data-descricao="Uma cabana abandonada há anos mostra sinais recentes de presença. Quem esteve lá — e por quê não quer ser encontrado?"
+        data-alerta="Observe além do óbvio. A resposta está no que você não vê.">
+        <div class="cd2-badge medio">⚠ Médio</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/f623a89f-3845-42e4-bfdb-60e4e8cf16ef.png" alt="Dossiê Cabana 13">
+        <div class="cd2-label">O Mistério da Cabana 13</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">O Mistério da Cabana 13</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+      <div class="cd2-card" onclick="cd2Abrir(this)"
+        data-titulo="A Casa da Rua 66" data-nivel="dificil"
+        data-descricao="Uma casa comum ligada a seis desaparecimentos em vinte anos. Nenhuma investigação chegou perto da resposta. Talvez porque ninguém tenha feito as perguntas certas."
+        data-alerta="Alguns lugares não deveriam ser investigados.">
+        <div class="cd2-badge dificil">⚠ Difícil</div>
+        <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/24c6602a-3ddb-4fde-89db-7e2ff5d98062.png" alt="Dossiê Rua 66">
+        <div class="cd2-label">A Casa da Rua 66</div>
+        <div class="cd2-overlay"><div class="cd2-overlay-titulo">A Casa da Rua 66</div><button class="cd2-overlay-btn">Acessar Dossiê</button></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cd2-popup" id="cd2Popup" onclick="cd2FecharFora(event)">
+  <div class="cd2-popup-box">
+    <button class="cd2-popup-fechar" onclick="cd2Fechar()">×</button>
+    <div class="cd2-confidencial">CONFIDENCIAL</div>
+    <h2 class="cd2-popup-titulo" id="cd2Titulo"></h2>
+    <div class="cd2-popup-nivel" id="cd2Nivel"></div>
+    <hr class="cd2-separador">
+    <p class="cd2-popup-desc" id="cd2Desc"></p>
+    <p class="cd2-popup-alerta" id="cd2Alerta"></p>
+    <p class="cd2-popup-rodape">ARQUIVO CONFIDENCIAL — DOSSIÊ RESTRITO</p>
+  </div>
+</div>
+
+<style>
+.cd2-section{ background:#0a0a0a; padding:60px 20px; font-family:'Crimson Pro', Georgia, serif; text-align:center; position:relative; overflow:hidden; }
+.cd2-section::before{ content:''; position:absolute; inset:0; background:repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255,255,255,0.015) 40px, rgba(255,255,255,0.015) 41px); pointer-events:none; }
+.cd2-mini{ font-family:'Special Elite', monospace; color:#7a0000; letter-spacing:4px; font-size:11px; text-transform:uppercase; margin-bottom:12px; }
+.cd2-titulo{ font-family:'Special Elite', monospace; font-size:28px; color:#e8dcc8; margin-bottom:8px; font-weight:400; letter-spacing:1px; }
+.cd2-vitima{ color:#8B0000; text-decoration:line-through; text-decoration-color:#cc0000; }
+.cd2-subtitulo{ color:#7a7060; font-size:14px; font-style:italic; margin-bottom:40px; }
+.cd2-controls{ display:flex; justify-content:flex-end; gap:8px; max-width:1020px; margin:0 auto 12px; padding:0 10px; }
+.cd2-controls button{ width:36px; height:36px; border-radius:50%; background:#1a1208; color:#c8a96e; border:1px solid #3a2e1a; cursor:pointer; font-size:20px; line-height:1; transition:background .2s, border-color .2s; }
+.cd2-controls button:hover{ background:#2a1e0a; border-color:#c8a96e; }
+.cd2-wrapper{ max-width:1020px; margin:0 auto; overflow:hidden; }
+.cd2-track{ display:flex; gap:20px; overflow-x:auto; scroll-behavior:smooth; padding:10px 10px 20px; }
+.cd2-track::-webkit-scrollbar{ display:none; }
+.cd2-card{ flex:0 0 calc(33.33% - 14px); position:relative; cursor:pointer; border-radius:4px; overflow:hidden; transition:transform .3s ease, box-shadow .3s ease; }
+.cd2-card:hover{ transform:translateY(-6px) rotate(-0.5deg); box-shadow:0 20px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(200,169,110,0.3); }
+.cd2-card img{ width:100%; display:block; border-radius:4px; filter:sepia(20%) contrast(1.05); }
+.cd2-badge{ position:absolute; top:12px; left:12px; padding:4px 10px; font-family:'Special Elite', monospace; font-size:10px; border-radius:2px; letter-spacing:1px; text-transform:uppercase; z-index:2; border:1px solid; }
+.cd2-badge.medio{ background:rgba(180,120,10,0.9); color:#fff3d0; border-color:#c8a96e; }
+.cd2-badge.dificil{ background:rgba(120,10,10,0.9); color:#ffcccc; border-color:#cc4444; }
+.cd2-badge.extremo{ background:rgba(60,0,0,0.95); color:#ff9999; border-color:#880000; }
+.cd2-label{ position:absolute; bottom:0; left:0; right:0; padding:40px 12px 12px; background:linear-gradient(to top, rgba(5,3,0,0.95), transparent); font-family:'Special Elite', monospace; color:#c8a96e; font-size:13px; line-height:1.3; text-align:left; pointer-events:none; }
+.cd2-overlay{ position:absolute; inset:0; background:linear-gradient(to top, rgba(5,3,0,0.97) 0%, rgba(5,3,0,0.7) 50%, rgba(5,3,0,0.1) 100%); display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding:20px 16px; opacity:0; transition:opacity .3s ease; }
+.cd2-card:hover .cd2-overlay{ opacity:1; }
+.cd2-overlay-titulo{ font-family:'Special Elite', monospace; color:#e8dcc8; font-size:14px; margin-bottom:12px; line-height:1.4; text-align:center; }
+.cd2-overlay-btn{ background:#8B0000; color:#e8dcc8; border:1px solid #cc3333; padding:8px 20px; font-family:'Special Elite', monospace; font-size:12px; letter-spacing:2px; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:background .2s; }
+.cd2-overlay-btn:hover{ background:#a00000; }
+.cd2-popup{ display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); justify-content:center; align-items:center; z-index:9999; padding:20px; }
+.cd2-popup.ativo{ display:flex; }
+.cd2-popup-box{ background:#f5ead4; max-width:360px; width:100%; border-radius:3px; padding:28px 24px 24px; position:relative; border-top:4px solid #8B0000; box-shadow:0 30px 80px rgba(0,0,0,0.8); }
+.cd2-popup-fechar{ position:absolute; top:10px; right:14px; font-size:22px; cursor:pointer; color:#5a3e28; background:none; border:none; font-family:'Special Elite', monospace; line-height:1; }
+.cd2-confidencial{ font-family:'Special Elite', monospace; font-size:10px; letter-spacing:3px; color:#8B0000; border:1px solid #8B0000; display:inline-block; padding:2px 8px; margin-bottom:14px; opacity:0.8; }
+.cd2-popup-titulo{ font-family:'Special Elite', monospace; color:#1a0f00; font-size:18px; line-height:1.3; margin-bottom:10px; font-weight:400; }
+.cd2-popup-nivel{ display:inline-block; font-family:'Special Elite', monospace; font-size:10px; padding:3px 10px; border-radius:2px; letter-spacing:1px; text-transform:uppercase; margin-bottom:14px; border:1px solid; }
+.cd2-popup-nivel.medio{ background:#f5d06a; color:#3a2800; border-color:#c8960a; }
+.cd2-popup-nivel.dificil{ background:#dd4444; color:#fff0f0; border-color:#aa2222; }
+.cd2-popup-nivel.extremo{ background:#660000; color:#ffbbbb; border-color:#880000; }
+.cd2-separador{ border:none; border-top:1px dashed #c8a96e; margin:14px 0; opacity:0.6; }
+.cd2-popup-desc{ font-family:'Crimson Pro', Georgia, serif; color:#3a2800; font-size:16px; line-height:1.6; margin-bottom:10px; font-style:italic; }
+.cd2-popup-alerta{ font-family:'Special Elite', monospace; color:#8B0000; font-size:12px; letter-spacing:0.5px; margin-top:10px; padding-top:10px; border-top:1px dashed rgba(139,0,0,0.3); }
+.cd2-popup-alerta::before{ content:'⚠ '; }
+.cd2-popup-rodape{ font-family:'Special Elite', monospace; font-size:9px; color:#8a7a60; text-align:right; margin-top:16px; letter-spacing:1px; opacity:0.7; }
+@media(max-width:768px){ .cd2-card{ flex:0 0 82vw; } .cd2-overlay{ opacity:1; } .cd2-titulo{ font-size:22px; } .cd2-subtitulo{ font-size:13px; margin-bottom:24px; } .cd2-controls{ margin-bottom:8px; } .cd2-popup-box{ padding:22px 18px 20px; } .cd2-popup-titulo{ font-size:16px; } .cd2-popup-desc{ font-size:15px; } }
+@media(min-width:769px) and (max-width:1024px){ .cd2-card{ flex:0 0 calc(50% - 10px); } }
+</style>
+
+<script>
+function cd2Mover(dir){
+  var track = document.getElementById('cd2Track');
+  var card = document.querySelector('.cd2-card');
+  var largura = card.offsetWidth + 20;
+  var step = window.innerWidth <= 768 ? 1 : 3;
+  track.scrollBy({ left: dir * largura * step, behavior: 'smooth' });
+}
+function cd2Abrir(el){
+  var popup = document.getElementById('cd2Popup');
+  document.getElementById('cd2Titulo').innerText = el.dataset.titulo;
+  document.getElementById('cd2Desc').innerText = el.dataset.descricao;
+  document.getElementById('cd2Alerta').innerText = el.dataset.alerta;
+  var nivel = document.getElementById('cd2Nivel');
+  nivel.className = 'cd2-popup-nivel ' + el.dataset.nivel;
+  var labels = { medio: '⚠ Médio', dificil: '⚠ Difícil', extremo: '⚠ Extremo' };
+  nivel.innerText = labels[el.dataset.nivel] || el.dataset.nivel;
+  popup.classList.add('ativo');
+}
+function cd2Fechar(){ document.getElementById('cd2Popup').classList.remove('ativo'); }
+function cd2FecharFora(e){ if(e.target === document.getElementById('cd2Popup')) cd2Fechar(); }
+</script>
+
+<!-- COMO FUNCIONA -->
+<section class="cf-wrap">
+  <p class="cf-mini">ARQUIVOS DESCLASSIFICADOS</p>
+  <h2 class="cf-titulo">Como Funciona</h2>
+  <p class="cf-sub">Siga o mesmo processo que um investigador profissional usaria</p>
+  <div class="cf-steps">
+    <div class="cf-step">
+      <div class="cf-line"></div>
+      <div class="cf-icon-wrap"><span class="cf-num">1</span><i class="ti ti-file-text cf-icon"></i></div>
+      <p class="cf-step-titulo">Leia o Dossiê Oficial</p>
+      <p class="cf-step-desc">Absorva cada detalhe. Toda palavra pode ser uma pista — ou uma mentira. Forme suas primeiras teorias.</p>
+    </div>
+    <div class="cf-step">
+      <div class="cf-line"></div>
+      <div class="cf-icon-wrap"><span class="cf-num">2</span><i class="ti ti-search cf-icon"></i></div>
+      <p class="cf-step-titulo">Analise e Interrogue</p>
+      <p class="cf-step-desc">Examine evidências, documentos e álibis. Cada peça foi projetada para desafiar sua lógica.</p>
+    </div>
+    <div class="cf-step">
+      <div class="cf-icon-wrap"><span class="cf-num">3</span><i class="ti ti-skull cf-icon"></i></div>
+      <p class="cf-step-titulo">Revele o Assassino</p>
+      <p class="cf-step-desc">Chegou o momento da verdade. Junte as pontas soltas, identifique o culpado e entregue o veredito final.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.cf-wrap{ background:#0a0a0a; padding:60px 20px; text-align:center; font-family:'Special Elite',monospace; }
+.cf-mini{ color:#7a0000; letter-spacing:4px; font-size:11px; text-transform:uppercase; margin-bottom:14px; }
+.cf-titulo{ font-size:30px; color:#e8dcc8; font-weight:400; margin-bottom:10px; }
+.cf-sub{ color:#7a7060; font-size:14px; font-style:italic; margin-bottom:50px; font-family:Georgia,serif; }
+.cf-steps{ display:flex; justify-content:center; align-items:flex-start; gap:0; max-width:900px; margin:0 auto; position:relative; }
+.cf-step{ flex:1; display:flex; flex-direction:column; align-items:center; position:relative; padding:0 10px; }
+.cf-icon-wrap{ width:80px; height:80px; border-radius:50%; background:#1a1208; border:1px solid #3a2e1a; display:flex; align-items:center; justify-content:center; margin-bottom:20px; position:relative; z-index:2; }
+.cf-icon{ font-size:28px; color:#c8a96e; }
+.cf-num{ position:absolute; top:-6px; right:-6px; width:22px; height:22px; border-radius:50%; background:#8B0000; color:#e8dcc8; font-size:11px; display:flex; align-items:center; justify-content:center; font-family:Georgia,serif; }
+.cf-step-titulo{ font-size:14px; color:#e8dcc8; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; }
+.cf-step-desc{ font-family:Georgia,serif; font-size:14px; color:#7a7060; line-height:1.6; max-width:220px; }
+.cf-line{ position:absolute; top:40px; left:calc(50% + 40px); right:calc(-50% + 40px); height:1px; border-top:1px dashed #3a2e1a; z-index:1; }
+.cf-step:last-child .cf-line{ display:none; }
+@media(max-width:680px){ .cf-steps{ flex-direction:column; align-items:center; gap:40px; } .cf-line{ display:none; } .cf-step{ padding:0; } }
+</style>
+
+<!-- ARQUIVOS EXCLUSIVOS -->
+<section class="arquivos">
+  <p class="alerta">⚠️ CONTEÚDO RESTRITO</p>
+  <h2>ACESSO A ARQUIVOS EXCLUSIVOS<br><span>QUE NUNCA DEVERIAM TER VAZADO</span></h2>
+  <div class="linha"></div>
+  <div class="grid-arquivos">
+    <div class="item">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/75b2e8ab-d211-4090-b886-3944b670f75b.png" alt="">
+      <h3>EVIDÊNCIAS IMPACTANTES</h3>
+      <p>Fotografias, rastros e conexões inesperadas. Pistas que ligam suspeitos a conspirações ocultas.</p>
+    </div>
+    <div class="item">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/c2632b9d-4167-41cb-bd77-3e882ef6d277.png" alt="">
+      <h3>DOCUMENTOS REAIS</h3>
+      <p>Transcrições de interrogatórios e registros confidenciais. Detalhes que revelam inconsistências e verdades ocultas.</p>
+    </div>
+    <div class="item">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/imgi_11_sgagffs.png.png" alt="">
+      <h3>LAUDOS FORENSES</h3>
+      <p>Resultados técnicos e análises detalhadas. Evidências que mostram o que realmente aconteceu.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.arquivos *{ box-sizing:border-box; }
+.arquivos{ background:#0a0a0a; padding:100px 20px; text-align:center; color:#fff; }
+.alerta{ color:#ff2b2b; font-size:13px; letter-spacing:3px; margin-bottom:10px; }
+.arquivos h2{ font-size:42px; font-weight:800; line-height:1.2; }
+.arquivos h2 span{ color:#b30000; }
+.linha{ width:60px; height:3px; background:#b30000; margin:20px auto 60px; }
+.arquivos .grid-arquivos{ display:grid; grid-template-columns:repeat(3, 1fr); gap:50px; width:100%; max-width:1400px; margin:auto; }
+.arquivos .item{ width:100%; max-width:100%; }
+.arquivos .item img{ width:100%; min-width:100%; max-width:100%; height:auto; display:block; margin:0 auto; border-radius:14px; transition:0.3s; }
+.arquivos .item:hover img{ transform:scale(1.05); }
+.arquivos .item h3{ margin-top:20px; font-size:18px; letter-spacing:1px; }
+.arquivos .item p{ font-size:15px; color:#bbb; margin-top:10px; line-height:1.6; max-width:500px; margin-left:auto; margin-right:auto; }
+@media(max-width:1024px){ .arquivos .grid-arquivos{ grid-template-columns:repeat(2, 1fr); } }
+@media(max-width:768px){ .arquivos .grid-arquivos{ grid-template-columns:1fr; gap:40px; } .arquivos{ padding:70px 15px; } .arquivos h2{ font-size:26px; } }
+</style>
+
+<!-- CTA -->
+<a href="#oferta" class="cta-invest">🕵️‍♂️ COMEÇAR MINHA INVESTIGAÇÃO</a>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <h2 class="titulo-depo">JUNTE-SE À ELITE DA INVESTIGAÇÃO</h2>
+    <p class="sub-depo">Milhares de jogadores já vivem a emoção de desvendar crimes sem sair de casa. Casais mais conectados, amigos competindo e noites inesquecíveis.</p>
+    <p class="prova">(PESSOAS REAIS. REAÇÕES REAIS. SEM EDIÇÃO.)</p>
+    <div class="grid-depo">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento6-1.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento8-1.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento1.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento3.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento5.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento7.webp" alt="">
+      <img decoding="async" src="https://clubedosdetetives.site/wp-content/uploads/2026/03/depoimento2-1.webp" alt="">
+    </div>
+  </div>
+</section>
+
+<style>
+.depoimentos{ background:linear-gradient(180deg,#050505,#0a0a0a); padding:80px 20px; color:#fff; }
+.depoimentos .container{ max-width:1100px; margin:auto; text-align:center; }
+.titulo-depo{ font-size:clamp(26px,4vw,42px); font-weight:900; text-align:left; }
+.sub-depo{ color:#bbb; max-width:700px; margin:15px 0; text-align:left; }
+.prova{ color:#c1121f; font-weight:700; margin-bottom:40px; text-align:left; }
+.grid-depo{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.grid-depo img{ width:100%; border-radius:12px; transition:0.3s; cursor:pointer; }
+.grid-depo img:hover{ transform:scale(1.04); }
+@media(max-width:768px){ .grid-depo{ grid-template-columns:repeat(2,1fr); gap:12px; } .titulo-depo, .sub-depo, .prova{ text-align:center; } }
+</style>
+
+<!-- HERO NETFLIX -->
+<section class="hero-netflix">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <p class="badge">⚠️ BASEADO EM CASOS REAIS</p>
+    <h1 class="title">DESVENDE <br><span>CASOS REAIS</span></h1>
+    <div class="trailer-text">
+      <p>Em cada caso… uma escolha.</p>
+      <p>Em cada escolha… <span class="highlight">um risco.</span></p>
+      <p>Algumas pistas parecem te levar até a verdade.<br>Outras existem apenas para <span class="highlight">te afastar dela.</span></p>
+      <p class="fade">Nada aqui é por acaso.</p>
+      <p>Sua mente será colocada à prova a todo momento.</p>
+      <p class="strong">E confiar no que parece óbvio… <br>é exatamente o que faz a maioria falhar.</p>
+    </div>
+    <p class="final">Você está preparado para encarar a verdade?<span class="blink-cursor">_</span></p>
+  </div>
+</section>
+
+<style>
+.hero-netflix{ position:relative; min-height:100vh; display:flex; align-items:center; font-family:'Inter', sans-serif; color:#fff; overflow:hidden; }
+.hero-netflix .bg-image{ position:absolute; inset:0; background:url('https://clubedosdetetives.site/wp-content/uploads/2026/04/80d0fa20-450a-471f-b29b-b54df51828b3.png') center/cover no-repeat; filter:brightness(0.5); }
+.hero-netflix .overlay{ position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 40%, transparent 75%), linear-gradient(to top, rgba(0,0,0,0.9), transparent 40%); }
+.hero-netflix .hero-content{ position:relative; z-index:2; max-width:600px; margin-left:8%; padding:60px 0; }
+.hero-netflix .badge{ color:#ff2a2a; font-size:12px; font-weight:800; letter-spacing:2px; margin-bottom:20px; }
+.hero-netflix .title{ font-size:clamp(50px,7vw,90px); font-weight:900; line-height:0.95; }
+.hero-netflix .title span{ color:#ff1a1a; text-shadow:0 0 25px rgba(255,0,0,1), 0 0 60px rgba(255,0,0,0.8); display:inline-block; animation:titleGlitch 7s infinite; }
+@keyframes titleGlitch{
+  0%, 94%, 97%, 100%{ transform:translate(0,0); opacity:1; }
+  95%{ transform:translate(-2px,1px); opacity:0.85; text-shadow:2px 0 0 rgba(0,255,255,0.4), -2px 0 0 rgba(255,0,0,0.6); }
+  96%{ transform:translate(2px,-1px); opacity:0.9; }
+}
+.hero-netflix .trailer-text{ margin-top:25px; }
+.hero-netflix .trailer-text p{ font-size:16px; color:#ccc; margin:10px 0; line-height:1.6; }
+.hero-netflix .highlight{ color:#ff2a2a; font-weight:700; }
+.hero-netflix .fade{ opacity:0.6; font-style:italic; }
+.hero-netflix .strong{ color:#fff; font-weight:700; }
+.hero-netflix .final{ margin-top:25px; font-size:20px; font-weight:900; }
+.blink-cursor{ color:#ff1a1a; animation:cursorBlink 1s steps(1) infinite; }
+@keyframes cursorBlink{ 50%{ opacity:0; } }
+@media(max-width:768px){ .hero-netflix{ padding:80px 20px; } .hero-netflix .hero-content{ margin-left:0; text-align:center; } .hero-netflix .title{ font-size:42px; } }
+</style>
+
+<!-- OFERTA -->
+<div id="oferta">
+<div id="ob-wrapper">
+<div class="ob">
+  <p class="ob-alert">⚠ Liberado hoje • Acesso completo</p>
+  <h3 class="ob-titulo">Tudo que você vai receber:</h3>
+  <ul class="ob-lista">
+    <li class="ob-item">✔ +300 casos criminais desafiadores</li>
+    <li class="ob-item">✔ Pistas, depoimentos e soluções completas</li>
+    <li class="ob-item">✔ PDFs prontos para jogar</li>
+    <li class="ob-item dest">✔ Acesso vitalício + atualizações grátis</li>
+    <li class="ob-item bonus">🎁 +60 jogos extras liberados:</li>
+    <li class="ob-item sub">🎮 31 Drinking Games</li>
+    <li class="ob-item sub">🧠 24 Desafios</li>
+    <li class="ob-item sub">🍻 20 Jogos de Bebida</li>
+    <li class="ob-item sub">🔥 Uno Picante +18</li>
+    <li class="ob-item sub">💡 Quem é mais provável</li>
+    <li class="ob-item sub">🎲 Cartas e Tabuleiros</li>
+  </ul>
+  <div class="ob-div"></div>
+  <span class="ob-old">De R$ 99,90</span>
+  <div class="ob-preco">
+    <span class="ob-new">R$ 10,90</span>
+    <span class="ob-off">89% OFF</span>
+  </div>
+  <a href="https://laranjinha.digital/p/300-jogos-de-investigacao-clube-dos-dete-3a732c" class="ob-btn" target="_blank" rel="noopener" onclick="if(typeof fbq==='function'){fbq('track','InitiateCheckout');}">
+    👉 Liberar acesso agora
+  </a>
+  <p class="ob-micro">⚡ Acesso imediato • Vitalício • Sem mensalidade</p>
+</div>
+</div>
+</div>
+
+<style>
+#ob-wrapper *{ box-sizing:border-box; }
+#ob-wrapper .ob{ max-width:520px; margin:40px auto; padding:32px; background:#0a0a0a; border:1px solid #3a2e1a; border-top:3px solid #8B0000; border-radius:4px; font-family:'Crimson Pro',Georgia,serif; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.7); }
+#ob-wrapper .ob-alert{ font-family:'Special Elite',monospace; font-size:12px; color:#e8dcc8; letter-spacing:3px; text-transform:uppercase; padding:10px 16px; background:rgba(139,0,0,0.2); border:1px solid rgba(139,0,0,0.5); border-radius:2px; margin-bottom:22px; display:block; }
+#ob-wrapper .ob-titulo{ font-family:'Special Elite',monospace; font-size:16px; color:#e8dcc8; letter-spacing:1px; margin-bottom:20px; font-weight:400; }
+#ob-wrapper .ob-lista{ list-style:none; padding:0 0 0 8px; margin:0 0 18px 0; text-align:left; }
+#ob-wrapper .ob-lista .ob-item{ font-size:15px; color:#b0a090; margin:8px 0; line-height:1.5; }
+#ob-wrapper .ob-lista .ob-item.dest{ color:#e8dcc8; font-weight:600; }
+#ob-wrapper .ob-lista .ob-item.bonus{ font-family:'Special Elite',monospace; color:#c8a96e; font-size:13px; letter-spacing:1px; margin-top:16px; margin-bottom:4px; }
+#ob-wrapper .ob-lista .ob-item.sub{ font-size:14px; color:#9a8a7a; padding-left:20px; margin-top:4px; }
+#ob-wrapper .ob-div{ height:1px; background:linear-gradient(90deg,transparent,#3a2e1a,#8B0000,#3a2e1a,transparent); margin:22px 0; }
+#ob-wrapper .ob-old{ display:block; font-size:13px; color:#5a4a3a; text-decoration:line-through; margin-bottom:6px; font-family:'Special Elite',monospace; letter-spacing:1px; }
+#ob-wrapper .ob-preco{ display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:4px; }
+#ob-wrapper .ob-new{ font-family:'Special Elite',monospace; font-size:38px; color:#c8a96e; letter-spacing:2px; line-height:1; }
+#ob-wrapper .ob-off{ background:#8B0000; color:#e8dcc8; font-family:'Special Elite',monospace; font-size:10px; letter-spacing:2px; padding:5px 12px; border-radius:2px; border:1px solid #cc3333; white-space:nowrap; }
+#ob-wrapper .ob-btn{ display:block; width:100%; margin:24px auto 0; background:#8B0000; color:#e8dcc8; padding:18px 20px; font-family:'Special Elite',monospace; font-size:14px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; border-radius:2px; border:1px solid #cc3333; box-shadow:0 8px 30px rgba(139,0,0,0.4); text-align:center; transition:.25s; }
+#ob-wrapper .ob-btn:hover{ background:#a00000; box-shadow:0 12px 40px rgba(139,0,0,0.7); transform:translateY(-2px); }
+#ob-wrapper .ob-micro{ margin-top:14px; font-size:12px; color:#5a4a3a; font-family:'Special Elite',monospace; letter-spacing:1px; }
+@media(max-width:600px){ #ob-wrapper .ob{ padding:24px 20px; } #ob-wrapper .ob-new{ font-size:30px; } }
+</style>
+
+<!-- GARANTIA -->
+<section class="garantia">
+  <img decoding="async" width="120" height="120" src="https://clubedosdetetives.site/wp-content/uploads/2025/10/4toW8HY-300x300.png-150x150.webp" alt="Selo de garantia">
+  <h4>Garantia de Imersão Total ou Seu Dinheiro de Volta.</h4>
+  <p>Acreditamos tanto no poder da nossa experiência que oferecemos uma garantia incondicional: Se, por qualquer motivo, você não se sentir completamente envolvido pela investigação ou satisfeito com a dinâmica do jogo, devolvemos 100% do seu dinheiro sem questionamentos. Basta solicitar em até 7 dias após a compra.</p>
+</section>
+
+<style>
+.garantia{ background:#050505; padding:60px 20px; text-align:center; max-width:560px; margin:0 auto; }
+.garantia img{ width:100px; height:100px; margin-bottom:20px; }
+.garantia h4{ font-family:'Special Elite',monospace; color:#e8dcc8; font-size:18px; font-weight:400; margin-bottom:16px; }
+.garantia p{ font-family:'Crimson Pro',Georgia,serif; color:#9a8a7a; font-size:15px; line-height:1.7; }
+</style>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <h2>INTERROGATÓRIO (FAQ)</h2>
+  <div class="faq-list">
+    <details open>
+      <summary>Como Receberei o Material?</summary>
+      <p>Você receberá o conteúdo com +300 casos criminais para se divertir com o seu parceiro ou amigos no e-mail cadastrado na hora da compra.</p>
+    </details>
+    <details>
+      <summary>Em quanto Tempo Recebo os Casos?</summary>
+      <p>O acesso é imediato.</p>
+    </details>
+    <details>
+      <summary>Quais as formas de pagamento disponíveis?</summary>
+      <p>São aceitas compras via Pix e cartão de crédito, processadas pela Laranjinha.</p>
+    </details>
+  </div>
+  <img class="trust-seal" loading="lazy" decoding="async" width="410" height="62" src="https://clubedosdetetives.site/wp-content/uploads/2025/06/0c74539d2857da4c277c4c9b20dbbec7.png" alt="Selo de compra segura">
+</section>
+
+<style>
+.faq-section{ background:#0a0a0a; padding:70px 20px; max-width:760px; margin:0 auto; text-align:center; }
+.faq-section h2{ font-family:'Special Elite',monospace; color:#e8dcc8; font-size:24px; font-weight:400; letter-spacing:1px; margin-bottom:36px; text-transform:uppercase; }
+.faq-list{ text-align:left; }
+.faq-list details{ background:#111; border:1px solid #2a2018; border-radius:4px; margin-bottom:14px; padding:18px 20px; }
+.faq-list summary{ font-family:'Inter',sans-serif; color:#e8dcc8; font-size:15px; font-weight:600; cursor:pointer; list-style:none; }
+.faq-list summary::-webkit-details-marker{ display:none; }
+.faq-list summary::after{ content:'+'; float:right; color:#8B0000; font-size:18px; }
+.faq-list details[open] summary::after{ content:'–'; }
+.faq-list p{ font-family:'Crimson Pro',Georgia,serif; color:#9a8a7a; font-size:15px; line-height:1.7; margin:14px 0 0; }
+.faq-section .trust-seal{ max-width:280px; height:auto; margin-top:40px; opacity:0.85; }
+</style>
+
+<!-- FOOTER -->
+<footer style="background:#000;text-align:center;padding:30px 20px;">
+  <p style="color:#5a4a3a;font-family:'Inter',sans-serif;font-size:13px;margin:0;">© Arquivo Confidencial 2026. Todos os Direitos Reservados.</p>
+</footer>
+
+</body>
+</html>
