@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -57,11 +58,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2383396578852544');
+fbq('init', '1008136685303073');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2383396578852544&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1008136685303073&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 </head>
@@ -197,6 +198,7 @@ document.querySelectorAll('.menu a, .menu-mobile a, .btn-header, .btn-mobile').f
         <li>Pistas físicas, digitais e mapas da cena do crime</li>
         <li>Links secretos para páginas online com mais evidências</li>
         <li>Produto 100% digital — jogue pelo celular ou computador</li>
+        <li>Grupo exclusivo no Telegram com casos novos toda semana</li>
       </ul>
       <div class="quote">
         "Trabalhem em dupla ou em grupo. Conectem as pistas, analisem os
@@ -579,16 +581,154 @@ function cd2FecharFora(e){ if(e.target === document.getElementById('cd2Popup')) 
 </style>
 
 <!-- OFERTA -->
+<!-- TELEGRAM SECTION -->
+<section class="tg-section">
+  <div class="tg-inner">
+    <div class="tg-badge">NOVO — EXCLUSIVO PARA MEMBROS</div>
+    <h2 class="tg-titulo">
+      📲 Grupo no Telegram:<br>
+      <span class="tg-destaque">Casos da Semana</span>
+    </h2>
+    <p class="tg-sub">
+      Todo domingo à meia-noite, um novo caso cai no grupo.<br>
+      Você tem 7 dias para resolver antes de todo mundo.
+    </p>
+    <div class="tg-grid">
+      <div class="tg-card">
+        <div class="tg-icon">🔍</div>
+        <h3>Caso novo toda semana</h3>
+        <p>Inéditos, exclusivos, criados só para membros do grupo. Ninguém de fora resolve antes de você.</p>
+      </div>
+      <div class="tg-card">
+        <div class="tg-icon">🧠</div>
+        <h3>Discuta ao vivo</h3>
+        <p>Troque teorias com outros detetives do grupo em tempo real. A investigação fica mais intensa a muitas cabeças.</p>
+      </div>
+      <div class="tg-card">
+        <div class="tg-icon">🏆</div>
+        <h3>Ranking de detetives</h3>
+        <p>Quem resolver mais rápido e com mais precisão sobe no ranking mensal do grupo. Você é bom o suficiente?</p>
+      </div>
+      <div class="tg-card">
+        <div class="tg-icon">📁</div>
+        <h3>Arquivo de casos</h3>
+        <p>Todos os casos anteriores ficam salvos no grupo para você resolver no seu ritmo, quando quiser.</p>
+      </div>
+    </div>
+    <p class="tg-aviso">⚡ O link do grupo é enviado automaticamente após a compra. Acesso imediato.</p>
+  </div>
+</section>
+
+<style>
+.tg-section{
+  background: linear-gradient(180deg, #0a0a0a 0%, #0d0009 100%);
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.tg-section::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center top, rgba(0,136,204,0.08), transparent 60%);
+  pointer-events: none;
+}
+.tg-inner{
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.tg-badge{
+  display: inline-block;
+  background: #0088cc;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.tg-titulo{
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+.tg-destaque{
+  color: #0088cc;
+  text-shadow: 0 0 20px rgba(0,136,204,0.5);
+}
+.tg-sub{
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+}
+.tg-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.tg-card{
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,136,204,0.2);
+  border-radius: 12px;
+  padding: 28px 22px;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+.tg-card:hover{
+  border-color: rgba(0,136,204,0.5);
+}
+.tg-icon{
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.tg-card h3{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.tg-card p{
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+.tg-aviso{
+  color: #0088cc;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+@media(max-width: 600px){
+  .tg-grid{ grid-template-columns: 1fr; gap: 14px; }
+  .tg-card{ padding: 22px 18px; }
+}
+</style>
+
 <div id="oferta">
 <div id="ob-wrapper">
 <div class="ob">
   <p class="ob-alert">⚠ Liberado hoje • Acesso completo</p>
   <h3 class="ob-titulo">Tudo que você vai receber:</h3>
   <ul class="ob-lista">
-    <li class="ob-item">✔ +300 casos criminais desafiadores</li>
+    <li class="ob-item">✔ +300 casos criminais desafiadores em PDF</li>
     <li class="ob-item">✔ Pistas, depoimentos e soluções completas</li>
-    <li class="ob-item">✔ PDFs prontos para jogar</li>
+    <li class="ob-item">✔ PDFs prontos para jogar agora</li>
     <li class="ob-item dest">✔ Acesso vitalício + atualizações grátis</li>
+    <li class="ob-item dest">✔ Grupo exclusivo no Telegram — Casos da Semana</li>
+    <li class="ob-item sub">🔍 Novo caso toda semana no grupo</li>
+    <li class="ob-item sub">🧠 Discuta com outros detetives ao vivo</li>
+    <li class="ob-item sub">🏆 Rankings e desafios entre membros</li>
     <li class="ob-item bonus">🎁 +60 jogos extras liberados:</li>
     <li class="ob-item sub">🎮 31 Drinking Games</li>
     <li class="ob-item sub">🧠 24 Desafios</li>
@@ -606,7 +746,7 @@ function cd2FecharFora(e){ if(e.target === document.getElementById('cd2Popup')) 
   <a href="https://laranjinha.digital/p/300-jogos-de-investigacao-clube-dos-dete-3a732c" class="ob-btn" target="_blank" rel="noopener" onclick="if(typeof fbq==='function'){fbq('track','InitiateCheckout');}">
     👉 Liberar acesso agora
   </a>
-  <p class="ob-micro">⚡ Acesso imediato • Vitalício • Sem mensalidade</p>
+  <p class="ob-micro">⚡ Acesso imediato • PDFs + Grupo Telegram • Sem mensalidade</p>
 </div>
 </div>
 </div>
@@ -657,6 +797,10 @@ function cd2FecharFora(e){ if(e.target === document.getElementById('cd2Popup')) 
     <details>
       <summary>Em quanto Tempo Recebo os Casos?</summary>
       <p>O acesso é imediato.</p>
+    </details>
+    <details>
+      <summary>Como acesso o grupo do Telegram?</summary>
+      <p>O link do grupo exclusivo é enviado automaticamente no e-mail de confirmação, junto com os PDFs. É só clicar e entrar. Novos casos caem todo domingo à meia-noite.</p>
     </details>
     <details>
       <summary>Quais as formas de pagamento disponíveis?</summary>
